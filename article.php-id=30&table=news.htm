@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
+<html>
+<meta charset="UTF-8">
 <meta property="fb:app_id"       content="887566987978996" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name='freelancehunt-verification' content='a7ddf20eb9e6cf3' />
     <meta name='yandex-verification' content='4c5d65e11eafa45e' />
     <meta name="keywords" content="блоги, соціальні мережі, інформаційні технології, програмування, программирование, информационная безопасность, стартапы, новости интернета, интернет маркетинг, ua, itua, in, internet, news, it, science, itscience, filonchuk, dasyuk, ,Україна, айті, ком'пютер, новини, у, сфері, комп'ютерних, технологій, сайт, інформатика, it-science.com.ua, інформаційні технології, шкільна інформатика, скретч, scratch, всеукраїнська олімпіада, word, excel, office, PowerPoint, access, бази даних, запити баз даних, останні, події, подія, урок, уроки, завдання, олімпіада, олімпіади, чернігів, київ, житомир, одеса, дніпропетровськ, європа, програмування, хакери, роботи, конспекти до уроку, презентації, таблиці, документи, завантажити, конкурс, міського, міський, Майкрософт, apple, Microsoft, htc, Samsung, Google, YouTube, всеукраїнська олімпіада з інформаційних технологій, kickstarter, нові, продукти, носії інформації, складові, складові комп'ютера, повідомлення, види, повідомлень, казка, графіка, мови, програмування" /> 
-    
-<title>It-science</title>
+    <meta property="og:site_name" content="It-Science/" />
+    <meta property="og:type" content="web-site" />
+    <meta property="og:url" content="http://it-science.com.ua/article.php?id=30&table=news" /> 
+    <meta property="og:image" content="http://it-science.com.ua/img/main/share_small.png" />
+
+<title>Вуса, лапи і хвіст: як нейронні мережі розпізнають котів та інші об'єкти</title>
 
 
 <script type="text/javascript" src="jquery.min.js" tppabs="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -18,49 +20,45 @@
 <link href="favicon.png" tppabs="http://it-science.com.ua/favicon.png" rel="shortcut icon" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="style.css" tppabs="http://it-science.com.ua/css/style.css">
  
+<script>
+$("document").ready(function() {
+            //hiding all elements with tap p in navigation block, except for first paragpaph
+            $("#navigation p").hide();
+            $("#navigation p:eq(0)").show();
 
-	<script src="jquery.movingboxes.min.js" tppabs="http://it-science.com.ua/js/jquery.movingboxes.min.js"></script>
-	<script type="text/javascript">
-	 $(document).ready(function() {
-	 	
-	 	$("#toHead").click(function(){
-			$("body").animate({"scrollTop":0},"slow");
-		});
-		$("#toMenu").click(function(){	
-			var height=$("#heightMenu").position(); 
-			$("body").animate({"scrollTop":height.top},"slow"); 
-		});
-		$("#toMenu1").click(function(){	
-			var height=$("#heightMenu").position(); 
-			$("body").animate({"scrollTop":height.top},"slow"); 
-		});
-	 	$("#toNews").click(function(){	
-			var height=$("#heightNews").position();
+            //Navigation block functions
+            //on hover show a type of a button()
 
-			$("body").animate({"scrollTop":height.top},"slow"); 
-		});
-		$('#slider').movingBoxes({
-			startPanel   : 3,      
-			wrap         : false,  
-			buildNav     : true,   
-				navFormatter : function(){ return "&#9679;"; } 
-			});
-		});	
-	</script>
+            $("#navigation a:eq(0)").hover(
+                function(){$("#navigation p:eq(0)").hide();$("#navigation p:eq(1)").show();},
+                function(){$("#navigation p:eq(0)").show();$("#navigation p:eq(1)").hide();}
+            );
+            $("#navigation a:eq(1)").hover(
+                function(){$("#navigation p:eq(0)").hide();$("#navigation p:eq(2)").show();},
+                function(){$("#navigation p:eq(0)").show();$("#navigation p:eq(2)").hide();}
+            );
+            $("#navigation a:eq(2)").hover(
+                function(){$("#navigation p:eq(0)").hide();$("#navigation p:eq(3)").show();},
+                function(){$("#navigation p:eq(0)").show();$("#navigation p:eq(3)").hide();}
+            );
 
-	<script>
-//	function out(location) {
-//			return 1;// "document.location=+"location"+?width="+$(window).width();
-//		}
-//	$(document).ready(
-//	alert(1);	
-//	alert(out('it'));
-	//);
-	
-	</script>
-</head>
+        });
+    function windowSize(){
+    if ($(window).width() <= '995'){
+        $('.small').show();
+        $('.big').hide();
+    } else {
+        $('.small').hide();
+        $('.big').show();
+    }
+}
+
+$(window).on('load resize',windowSize);
+</script>
+
+
 <body>
-	<script>
+    <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -163,98 +161,119 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 
+</script>    <div id="wrapperN">
+		
+						<div id="article">
+							<div id="articleName"><p>Вуса, лапи і хвіст: як нейронні мережі розпізнають котів та інші об'єкти</p></div>
+					
+							<div id="content">Розпізнавання зображень - класичний приклад використання нейронних мереж. 
+В статті поговоримо, як відбувається процес навчання мережі, в чому виникають складності і навіщо в розробці використовувати біологію.а правильно розпоряджатися ним.
+<br>
+<br>
+<a class="resourses"  href="javascript:if(confirm(%27http://oksanakovalenko.blogspot.com/2018/04/blog-post_60.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://oksanakovalenko.blogspot.com/2018/04/blog-post_60.html%27" tppabs="http://oksanakovalenko.blogspot.com/2018/04/blog-post_60.html"></i>Читати далі</a>
+<br>
+<br>
+<a class="resourses"  href="javascript:if(confirm(%27https://habr.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://habr.com/%27" tppabs="https://habr.com/"></i>Джерело: https://habr.com</a></div>
+							  
+							<div id="end"></div>
+						</div>
+						
+					        <div class="big"><div class="fb-like"   data-width="500" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></div>
+        <div class="small"><div class="fb-like"   data-width="250" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></div>
+          <div id="lastPosts">
+        <h1 class="afterArticle">Останні матеріали:</h1>
+  			<a href="article.php-id=35&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=35&table=news">
+  			<div class="post">
+                <img src="news_35.png.jpg" tppabs="http://it-science.com.ua/img/blocks/news_35.png" alt="">
+                <div id="info">
+                    <p id="title"></p>
+                    <p id="long_title">Робот Софія приїхала до Києва</p>
+                </div>
+            </div>
+            </a>
+  			
+  			<a href="article.php-id=34&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=34&table=news">
+  			<div class="post">
+                <img src="news_34.png" tppabs="http://it-science.com.ua/img/blocks/news_34.png" alt="">
+                <div id="info">
+                    <p id="title"></p>
+                    <p id="long_title">Google святкує 20 років</p>
+                </div>
+            </div>
+            </a>
+  			
+  			<a href="article.php-id=33&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=33&table=news">
+  			<div class="post">
+                <img src="news_33.png" tppabs="http://it-science.com.ua/img/blocks/news_33.png" alt="">
+                <div id="info">
+                    <p id="title"></p>
+                    <p id="long_title">SpaceX - ракети, які повертаються</p>
+                </div>
+            </div>
+            </a>
+  			</div> 
+        <h1 class="afterArticle">Коментарі:</h1>
+        <div class="big"><div class="fb-comments" data-href="article.php-id=30&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=30&table=news" data-width="600" data-numposts="5"></div></div>
+        <div class="small"><div id="small" class="fb-comments" data-href="article.php-id=30&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=30&table=news" data-width="250" data-numposts="5"></div></div>
+    </div>  
+
+
+  <div id="rightCol">
+   
+
+    <div class="block" id="share">
+        <h1><i class="fa fa-share-alt"></i>&nbsp;Поділитися</h1>
+	        <script type="text/javascript">(function() {
+	        if (window.pluso)if (typeof window.pluso.start == "function") return;
+	        if (window.ifpluso==undefined) { window.ifpluso = 1;
+	        var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+	        s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+	        s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+	        var h=d[g]('body')[0];
+	        h.appendChild(s);
+	        }})();</script>
+        <div class="pluso" data-background="transparent" tppabs="http://it-science.com.ua/transparent" data-options="medium,square,line,horizontal,counter,theme=04" data-services="vkontakte,facebook,twitter,google,email"></div>        
+    </div>
+
+ 
+    <div class="block" id="search">
+     <h1><i class="fa fa-search" style="margin-bottom:2%;"></i>&nbsp;Пошук</h1>
+     <script>
+  (function() {
+    var cx = '010759461501894660166:rwvlkbzyzsa';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-	<div class="mainPageHead">
-		<img src="header.png" tppabs="http://it-science.com.ua/img/main/header.png" alt="">
-	</div>
-	<div id="heightMenu"></div>
-	<div class="Scroll" id="toMenu"><i class="fa fa-angle-down"></i></div>
-	
-	<div id="mainpage">
+  <div id="searchRC">
+<gcse:searchbox-only></gcse:searchbox-only>
+    </div>
 
-		<div class="Scroll" id="toHead"><i class="fa fa-angle-up"></i></div>
-	
-	
-		<div class="titels" id="titleMenu">Меню</div>
-		<div class="bulletsBlock" >
-				<div class="bullet-item" onClick="document.location='it'">
-					<img src="ikt3.png" tppabs="http://it-science.com.ua/img/main/boxes/ikt3.png" alt="" class="iconBullet">
-					<h2 class="titleButton">Інформаційні технології</h2>
-				</div>
+</div> 
 
-			<div class="bullet-item" onClick="document.location='dev'">
-				<img src="prog.png" tppabs="http://it-science.com.ua/img/main/boxes/prog.png" alt="" class="iconBullet">
-				<h2 class="titleButton">Програмування</h2>
-			</div>
 
-			<div class="bullet-item" onClick="document.location='school'">
-				<img src="inform.png" tppabs="http://it-science.com.ua/img/main/boxes/inform.png" alt="" class="iconBullet">
-				<h2 class="titleButton">Шкільна інформатика</h2>
-			</div>
+        <div class="block" id="adds">
+            <h1><i class="fa fa-adjust"></i>&nbsp;Реклама</h1>
+           <script async src="adsbygoogle.js" tppabs="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- main add block -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9571404577257395"
+         data-ad-slot="5707456069"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
 
-			<div class="bullet-item" onClick="document.location='scratch'">
-					<img src="scratch3.png" tppabs="http://it-science.com.ua/img/main/boxes/scratch3.png" alt="" class="iconBullet">
-					<h2 class="titleButton">Scratch</h2>
-			</div>
-
-		</div>
-
-		<div class="quotation">
-			<div class="qu"><p>"Якщо ви вважаєте С++ важким, то спробуйте вивчити англійску."</p></div>
-			<div class="autor" id="heightNews">Б'ярн Страуструп</div>
-		
-
-		</div>
-		
-			<div class="Scroll" id="toNews"><i class="fa fa-angle-down"></i></div>
-
-		<!--<img class="downScroll" id="toNews" src="img/downScroll.png">
-		<img class="downScroll" id="toNews" src="img/downScroll.png">-->
-
-		<!--Main page slider-->
-				<div class="newsMainPage">
-		<div class="Scroll" id="toMenu1"><i class="fa fa-angle-up"></i></div>
-			<div class="titels" id="lastNewsTitle">Останні новини</div>
-			<ul id="slider"><li>
-					<img  src="news_35.png.jpg" tppabs="http://it-science.com.ua/img/blocks/news_35.png">
-					<h2>Робот Софія приїхала до Києва</h2>
-					<p><a href="article.php-id=35&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=35&table=news">Детальніше..</a></p>
-				</li><li>
-					<img  src="news_34.png" tppabs="http://it-science.com.ua/img/blocks/news_34.png">
-					<h2>Google святкує 20 років</h2>
-					<p><a href="article.php-id=34&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=34&table=news">Детальніше..</a></p>
-				</li><li>
-					<img  src="news_33.png" tppabs="http://it-science.com.ua/img/blocks/news_33.png">
-					<h2>SpaceX - ракети, які повертаються</h2>
-					<p><a href="article.php-id=33&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=33&table=news">Детальніше..</a></p>
-				</li><li>
-					<img  src="news_32.png.jpg" tppabs="http://it-science.com.ua/img/blocks/news_32.png">
-					<h2>Малюємо світ усім світом. Google запустив глобальну малювалку на основі штучного інтелекту </h2>
-					<p><a href="article.php-id=32&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=32&table=news">Детальніше..</a></p>
-				</li><li>
-					<img  src="news_31.png.jpg" tppabs="http://it-science.com.ua/img/blocks/news_31.png">
-					<h2>Люди - комп'ютери...</h2>
-					<p><a href="article.php-id=31&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=31&table=news">Детальніше..</a></p>
-				</li><li>
-					<img  src="news_30.png.jpg" tppabs="http://it-science.com.ua/img/blocks/news_30.png">
-					<h2>Вуса, лапи і хвіст: як нейронні мережі розпізнають котів та інші об'єкти</h2>
-					<p><a href="article.php-id=30&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=30&table=news">Детальніше..</a></p>
-				</li><li>
-					<img  src="news_29.png" tppabs="http://it-science.com.ua/img/blocks/news_29.png">
-					<h2>10 ознак «розумного міста» </h2>
-					<p><a href="article.php-id=29&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=29&table=news">Детальніше..</a></p>
-				</li><li>
-					<img  src="news_28.png" tppabs="http://it-science.com.ua/img/blocks/news_28.png">
-					<h2>Amazon за мільярд доларів купує стартап з офісом в Україні</h2>
-					<p><a href="article.php-id=28&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=28&table=news">Детальніше..</a></p>
-				</li><li>
-					<img  src="news_26.png.jpg" tppabs="http://it-science.com.ua/img/blocks/news_26.png">
-					<h2>Людиноподібний робот отримав громадянство Саудівської Аравії</h2>
-					<p><a href="article.php-id=26&table=news.htm" tppabs="http://it-science.com.ua/article.php?id=26&table=news">Детальніше..</a></p>
-				</li></ul>
-		</div>
-	</div>
-	<footer>
+     </ul>    </div>
+    </div>
+    <footer>
 		<div id="social">
 			
 		<h3>Всі права захищені &copy; 2018 <br /></h3>
@@ -274,6 +293,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			
 		</div>
 </footer>
-	
 </body>
 </html>

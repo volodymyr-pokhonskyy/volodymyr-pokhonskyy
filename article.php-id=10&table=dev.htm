@@ -1,0 +1,420 @@
+<html>
+<meta charset="UTF-8">
+<meta property="fb:app_id"       content="887566987978996" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name='freelancehunt-verification' content='a7ddf20eb9e6cf3' />
+    <meta name='yandex-verification' content='4c5d65e11eafa45e' />
+    <meta name="keywords" content="блоги, соціальні мережі, інформаційні технології, програмування, программирование, информационная безопасность, стартапы, новости интернета, интернет маркетинг, ua, itua, in, internet, news, it, science, itscience, filonchuk, dasyuk, ,Україна, айті, ком'пютер, новини, у, сфері, комп'ютерних, технологій, сайт, інформатика, it-science.com.ua, інформаційні технології, шкільна інформатика, скретч, scratch, всеукраїнська олімпіада, word, excel, office, PowerPoint, access, бази даних, запити баз даних, останні, події, подія, урок, уроки, завдання, олімпіада, олімпіади, чернігів, київ, житомир, одеса, дніпропетровськ, європа, програмування, хакери, роботи, конспекти до уроку, презентації, таблиці, документи, завантажити, конкурс, міського, міський, Майкрософт, apple, Microsoft, htc, Samsung, Google, YouTube, всеукраїнська олімпіада з інформаційних технологій, kickstarter, нові, продукти, носії інформації, складові, складові комп'ютера, повідомлення, види, повідомлень, казка, графіка, мови, програмування" /> 
+    <meta property="og:site_name" content="It-Science/" />
+    <meta property="og:type" content="web-site" />
+    <meta property="og:url" content="http://it-science.com.ua/article.php?id=10&table=dev" /> 
+    <meta property="og:image" content="http://it-science.com.ua/img/main/share_small.png" />
+
+<title>Чому прийшов час вболівати за програмістів</title>
+
+
+<script type="text/javascript" src="jquery.min.js" tppabs="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo.min.js" tppabs="http://it-science.com.ua/js/jquery.scrollTo.min.js"></script>
+<link href="css-family=Open+Sans.css" tppabs="https://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'>	
+<link rel="stylesheet" href="font-awesome.min.css" tppabs="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="favicon.png" tppabs="http://it-science.com.ua/favicon.png" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="style.css" tppabs="http://it-science.com.ua/css/style.css">
+ 
+<script>
+$("document").ready(function() {
+            //hiding all elements with tap p in navigation block, except for first paragpaph
+            $("#navigation p").hide();
+            $("#navigation p:eq(0)").show();
+
+            //Navigation block functions
+            //on hover show a type of a button()
+
+            $("#navigation a:eq(0)").hover(
+                function(){$("#navigation p:eq(0)").hide();$("#navigation p:eq(1)").show();},
+                function(){$("#navigation p:eq(0)").show();$("#navigation p:eq(1)").hide();}
+            );
+            $("#navigation a:eq(1)").hover(
+                function(){$("#navigation p:eq(0)").hide();$("#navigation p:eq(2)").show();},
+                function(){$("#navigation p:eq(0)").show();$("#navigation p:eq(2)").hide();}
+            );
+            $("#navigation a:eq(2)").hover(
+                function(){$("#navigation p:eq(0)").hide();$("#navigation p:eq(3)").show();},
+                function(){$("#navigation p:eq(0)").show();$("#navigation p:eq(3)").hide();}
+            );
+
+        });
+    function windowSize(){
+    if ($(window).width() <= '995'){
+        $('.small').show();
+        $('.big').hide();
+    } else {
+        $('.small').hide();
+        $('.big').show();
+    }
+}
+
+$(window).on('load resize',windowSize);
+</script>
+
+
+<body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+
+  ga('create', 'UA-68988527-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script type="text/javascript">
+$("#addition").hide();
+$("#minisearch").hide();
+   if($( window ).width() < 1000)
+        {
+          $("#more").hide();
+          $("#addition").hide();
+          $("#minisearch").show();
+        }
+   $(document).ready(function() {
+        $("#addition").hide();
+        $("#minisearch").hide();
+        var count = 0;
+       
+          $("#more").click(
+            function()
+            {
+                if (count % 2 == 0)
+                   $("#addition").show( "slow" );
+                else
+                   $("#addition").hide( "slow" );
+
+              count ++;
+
+            }
+          );
+       
+                
+    });
+   
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="ns.html-id=GTM-58KDL7" tppabs="http://www.googletagmanager.com/ns.html?id=GTM-58KDL7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'/*tpa=http://it-science.com.ua/gtm.js*/});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58KDL7');</script>
+<!-- End Google Tag Manager -->
+
+<div id="header">
+	<div id="logo"><a href="index.htm" tppabs="http://it-science.com.ua/"><img id="logoi" src="sheep.png" tppabs="http://it-science.com.ua/img/main/sheep.png" alt=""></a></div> 
+	<div id="menuHead">
+    <div><a href="index-1.htm" tppabs="http://it-science.com.ua/dev/">Програмування</a></div>
+    <div><a href="index-2.htm" tppabs="http://it-science.com.ua/school/">Шкільна інформатика</a></div>
+    <div><a href="index-3.htm" tppabs="http://it-science.com.ua/it/">Інформаційні технології</a></div>
+    <div id="minisearch"><a href="search.php.htm" tppabs="http://it-science.com.ua/search.php">Пошук</a></div>
+    <div id="more"><a>Більше</a></div>
+    
+  </div>
+
+	<!--<div id="topSearchPanel">
+		<form class="form-wrapper cf">
+    	
+        <input type="text" placeholder="Шукати..." required>
+       <div id="searchbt">&nbsp;</div>
+		</form>	
+
+		
+	</div>-->
+	<div id="auth">
+		<a href="sorry.php.htm" tppabs="http://it-science.com.ua/sorry.php">Вхід</a>
+	</div>
+
+</div>
+  <div  id="addition">
+        <div><a href="index-4.htm" tppabs="http://it-science.com.ua/scratch/">Scratch</a></div>
+        <div><a href="index.htm#lastNewsTitle" tppabs="http://it-science.com.ua/#lastNewsTitle">Новини</a></div>
+        <div><a href="search.php.htm" tppabs="http://it-science.com.ua/search.php">Пошук</a></div>
+        <div><a href="about.php.htm" tppabs="http://it-science.com.ua/about.php">Про нас</a></div>
+        <div><a target="_blank" href="javascript:if(confirm(%27https://form.jotformeu.com/53463929716365  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://form.jotformeu.com/53463929716365%27" tppabs="https://form.jotformeu.com/53463929716365">Зворотній зв'язок</a></div> 
+
+  </div>
+   <script src="feedback2.js-3.3.REV.js" tppabs="https://form.jotformeu.com/static/feedback2.js?3.3.REV" type="text/javascript"> new JotformFeedback({ formId: "53463929716365", buttonText: "Зворотній зв'язок", base: "https://form.jotformeu.com/", background: "#0B1B6C", fontColor: "#FFFFFF", buttonSide: "right", buttonAlign: "center", type: false, width: 700, height: 500 }); </script>
+<div id="headerHow"></div>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '887566987978996',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "sdk.js"/*tpa=http://connect.facebook.net/uk_UA/sdk.js*/;
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+</script>    <div id="wrapperN">
+		
+						<div id="article">
+							<div id="articleName"><p>Чому прийшов час вболівати за програмістів</p></div>		<div id="author">      <link rel="stylesheet" href="noavatar.css" tppabs="http://it-science.com.ua/css/noavatar.css">
+
+
+
+    <svg id="me" viewBox="0 0 168 168">
+  <g id="me-backdrop">
+    <path id="me-backdrop-back" d="M165.2,84c0,22.6-9.3,42.2-24.2,57s-34.4,26-57,26s-44.1-9.2-58.9-24S1.7,106.6,1.7,84
+			S10.2,39.8,25,25S61.4,3,84,3s43.7,7.7,58.5,22.5S165.2,61.4,165.2,84z" />
+    <path id="me-backdrop-front" d="M163.2,84c0,14.6-4.3,27.6-11.1,39.3c-7,12.1-15.5,23.7-27.6,30.8
+			c-11.8,6.8-25.9,11.2-40.5,11.2c-14.6,0-28.4-5-40.1-11.8c-12.1-7-23.3-16.7-30.4-28.8C6.7,112.9,5,98.6,5,84
+			C5,69.4,7.2,55.4,14,43.6c7-12.1,17.8-21.9,30-28.9c11.8-6.8,25.4-9.4,40-9.4c14.6,0,27.5,3.8,39.3,10.6
+			c12.1,7,22.2,16.4,29.2,28.5C159.3,56.2,163.2,69.4,163.2,84z" />
+  </g>
+  <g id="me-face">
+    <g id="me-head">
+      <path id="me-head-base" d="M124.1,88.2c-0.7-2.1,1.5-5.8-1.6-6.5c-0.3-0.1-0.5-0.1-0.8,0c-0.4,0.1-0.8,0.2-1.1,0.5
+				c-0.2,0.1-0.3,0.2-0.5,0.4c-0.4,0.4-0.8,0.9-1.2,1.4c-0.4,0.6-0.7,1.3-1,1.8c-0.1,0.2-0.2,0.5-0.3,0.7l-2.5-2.4l0-0.6
+				c0.5-4.2-4.5-12.6-3.1-15.5c5.2-10.3-3.7-24.5-10.2-26.4c-6.5-2-13.9,3.2-20.1,4c-6.3,0.8-18.2-2.1-18.2-2.1
+				c-15.7,5.5-8,23-8,26.2c0,2.3-3.7,11-5.8,15.6c0,0,0-0.1,0-0.1c-0.3-0.5-0.6-1.1-1-1.6c-0.4-0.6-0.9-1.1-1.4-1.4
+				c-0.3-0.2-0.6-0.3-0.9-0.3c-0.3,0-0.5,0-0.8,0c-3.1,0.8-0.9,4.4-1.6,6.5c-0.7,2.1,0.2,19.2,7.1,19.6c0.1,0,0.1,0,0.2,0
+				c0.3,0,0.5,0,0.8,0c0,0,0.1,0,0.1,0c0.5,3.1,1.1,5.9,1.7,8.1c3.3,12.5,15.2,20.6,18,22.1c2.8,1.4,12.2,1.3,12.2,1.3
+				s9.4,0.1,12.2-1.3c2.8-1.4,15.9-9.3,18-22.1c0.4-2.5,0.9-5.2,1.3-8.1c0.1,0,0.2,0,0.4,0c0.3,0,0.5,0,0.8,0c0.1,0,0.1,0,0.2,0
+				C123.9,107.5,124.8,90.3,124.1,88.2z" />
+      <path id="me-outline-left" d="M118.9,83.9c-0.4,0.6-0.7,1.3-1,1.8c0,5.1-0.4,14-2,22c0.3,0,0.5,0,0.8,0
+				c0.1,0,0.1,0,0.2,0C118.7,98.6,118.9,88.4,118.9,83.9z" />
+      <path id="me-outline-right" d="M49.7,84.9c-0.3-0.5-0.6-1.1-1-1.6c0,3.5,0.2,14.4,2.3,24.4c0.1,0,0.1,0,0.2,0
+				c0.3,0,0.5,0,0.8,0C50.2,99,49.8,89.5,49.7,84.9z" />
+      <path id="me-hair" d="M47.3,82c0.5,0.3,1,0.8,1.4,1.4c0.4,0.5,0.7,1.1,1,1.6c0,0,0,0.1,0,0.1c2-4.6,5.8-13.2,5.8-15.6
+				c0-3.2-7.8-20.7,8-26.2c0,0,11.9,2.9,18.2,2.1c6.3-0.8,13.6-6,20.1-4c6.5,2,15.4,16.2,10.2,26.4c-1.5,2.9,3.5,11.3,3.1,15.5
+				l0,0.6l2.5,2.4c0.1-0.2,0.2-0.4,0.3-0.7c0.3-0.6,0.6-1.2,1-1.8c0.4-0.5,0.7-1,1.2-1.4c0.1-0.1,0.3-0.3,0.5-0.4
+				c0.4-0.2,0.7-0.4,1.1-0.5c0-14.2-0.5-31-10.3-41.2c0,0,0,0,0-0.1c-5.1-7.3-16.5-14.4-16.5-14.4l-2.4,2.2L86,25.3l-1.3,1.6
+				l-6.9-4.2c-0.5,1.5-3.1,4.3-3.1,4.3h-4.2l-3.1,3h-4.3c-1.7,3.3-6.8,10.4-8.5,12.7c-7.9,10.3-8.3,25.7-8.3,38.9
+				C46.7,81.7,47,81.8,47.3,82z" />
+    </g>
+    <g id="me-beard">
+      <path id="me-beard-main" d="M103.6,129.1c-0.4-3.4-0.2-6.9-0.6-10.3c-0.2-1.7-2.8,0-2.7,1.4c0.2,1.7,0.2,3.3,0.3,5
+				c-0.9-0.9-2.1-1.4-3.5-1.5c-0.4,0-0.8,0.5-0.8,0.9c0.2,2.3,0.4,4.6,0.3,6.9c-0.8-0.9-1.6-1.7-2.7-2.4c-0.5-0.3-1,0.2-1.1,0.7
+				c-0.2,1.4,0.1,4.2-2,3.6c-0.6-0.2-1.6-2.3-2.2-2.8c-0.3-0.2-0.7,0-0.9,0.3c-2.2,3-2.4,3.7-4.8,0.8c-0.2-0.3-0.6-0.1-0.7,0.1
+				c-2.1,2.9-3.3,4.3-5,0.1c-0.1-0.2-0.4-0.3-0.6-0.2c-1.9,1.3-2.4,2.6-3.6,0.1c-0.9-1.7-1.1-3.6-2.1-5.4c-0.1-0.2-0.5-0.1-0.7,0
+				c-0.7,0.6-1.3,1.3-2,2c-0.1-3.3-0.5-6.7-1.5-9.8c-0.5-1.7-3,0-2.7,1.4c0.9,3.1,1.4,6.4,1.5,9.6c-0.7,0.6-1.1,1.5-0.8,2.3
+				c0.8,2.6,3.4,4.5,5.5,6c0.6,0.4,1.3,1.1,2.1,1.7c-0.1,0.9,0.2,1.6,1.3,1.8c4.4,0.5,9.1-0.1,13.5-0.4c2.4-0.2,7.9,0.4,9.5-1.9
+				c0.1-0.2,0.2-0.4,0.3-0.6c2.8-2.1,6.2-3.9,7.1-7.6C104.2,130,104,129.4,103.6,129.1z" />
+      <path id="me-beard-patch" d="M89.7,125.5c-0.5-1-1.2-1.8-2.1-2.5c-0.1-0.1-0.3-0.1-0.4,0c-1.4,0-2.9,0.4-4.3,0.4
+				c-1.7,0-3.4-0.2-5-0.8c-0.4-0.2-0.7,0.5-0.4,0.7c-0.6,1.3-1.1,2.6-1.5,4c-0.2,0.6,0.2,1.1,0.8,0.8c0.8-0.4,1.6-0.8,2.3-1.3
+				c0.3,0.6,0.7,1.2,1.1,1.8c0.3,0.4,0.8,0.2,1-0.2c0.5-0.6,0.9-1.2,1.4-1.7c1,1,2,1.8,3.3,2.5c0,0,0,0,0,0l0.2,0.2l0.1-0.1
+				c0.3,0,0.6-0.3,0.6-0.5l0.1-0.1v-0.4c0-1,0-2,0.6-2.3l0.9-0.1c0.2,0,0.4,0.1,0.6,0.2C89.5,126.2,89.9,125.8,89.7,125.5z" />
+    </g>
+    <path id="me-mouth" d="M101.4,108.9c-0.1-0.3-0.3-0.4-0.5-0.5c0-0.1-0.1-0.2-0.3-0.2c-11.1-0.9-22.7-0.1-33.9,0.4
+			c-0.3-0.2-0.9-0.2-0.9,0.3c-0.4,7.8,9.5,11.1,15.8,10.1c0,0,0,0,0,0c5.2,2,11.6,0.9,16-2.6C99.4,114.9,102.1,111.4,101.4,108.9z
+			 M94.3,116.1c-3.9,1.9-8.4,2.4-12.7,2.5c0,0,0,0,0,0c-2.7-0.6-5.4-1-8.1-1.9c-3.7-1.2-5.7-3.5-6.5-7.2c10.8,0.1,22,0.6,32.8-0.6
+			c0,0.1,0,0.1,0,0.2C100,112.1,96.8,114.9,94.3,116.1z" />
+    <g id="me-eyes">
+      <path id="me-eye-left" d="M101.3,81.3c0,2-2,3.9-4,3.7c-2.4-0.2-3.4-2-3.4-4.1c0-1.6,1.2-3.3,4-3.3C100,77.6,101.3,79.2,101.3,81.3z" data-closed-d="M103.5,82.4c0,2-3.8,3.9-7.6,3.7c-4.6-0.2-6.4-2-6.4-4.1c0-1.6,1.6,2.3,7,2.3C100.3,84.3,103.5,81.3,103.5,82.4z"
+      />
+      <path id="me-eye-right" d="M74.4,81.5c0-0.6,0-1.2-0.1-1.6c-0.9-2.9-4.9-3-6.5-0.7c-0.8,1.1-0.9,2.6-0.3,3.8
+				c0.7,1.4,2.3,1.9,3.8,1.8c0.5,0,0.9-0.1,1.3-0.3c0.4-0.1,0.7-0.3,1-0.6c0.2-0.2,0.3-0.4,0.4-0.6c0.3-0.4,0.5-1,0.5-1.6
+				C74.4,81.6,74.4,81.5,74.4,81.5z" />
+    </g>
+    <g id="me-moustache">
+      <path id="me-moustache-left" d="M104.3,104.1c-0.2-0.2-0.6-0.3-0.8-0.1c-0.1,0.1-0.3,0.2-0.4,0.3
+				c-0.8-1-1.8-1.7-3.1-1.3c-0.4,0.1-0.6,0.4-0.8,0.7c-0.9,0.1-1.7,0.4-2.6,0.4c-1.4-0.1-2.3-1.6-3.8-1.6c-1.3,0-2,0.8-3.1,1.2
+				c-2,0.6-2.6-0.7-4.4-0.8c-0.3,0-0.4,0.4-0.2,0.5c0.8,0.8,1.6,1.8,2.8,2.1c1.3,0.3,2.2-0.4,3.4-0.7c1.4-0.3,2.3,0.1,3.6,0.6
+				c0.5,0.2,0.9,0.6,1.5,0.6c1,0,2.1-0.6,3.1-1.1c0,0,0,0,0,0c0.4,0.4,0.9,0.6,1.3,1.1c0.2,0.2,0.3,0.4,0.4,0.7
+				c-0.8,1.6-0.7,3.9-0.7,5.5c0,1.2,1.4,1.6,2.2,0.9c1.3-1,1.7-2.5,2-4.1C104.9,107.6,105.5,105.3,104.3,104.1z" />
+      <path id="me-moustache-right" d="M79.8,102.8c-1.5,0-2.9,0.7-4.4,0.4c-0.9-0.2-1.5-0.7-2.4-0.8c-2.3-0.3-6.4,4-8.3,2.2
+				c-1.1-1-2.5-0.2-2.7,1.1c-0.3,2.6,1.5,4.9,2.1,7.3c0.3,1.3,2.2,1.2,2.5,0c0.5-2-0.2-3.9-0.9-5.8c0.2-0.1,0.5-0.2,0.8-0.3
+				c1.5-0.6,4.5-2.6,6-2.6c0.9,0,1.7,0.7,2.8,0.8c1.6,0.1,3.4-0.7,4.7-1.5C80.5,103.5,80.3,102.8,79.8,102.8z" />
+    </g>
+    <g id="me-eyebrows">
+      <path id="me-eyebrow-left" d="M108.4,73.2c-1.6-2-4.2-3.1-6.7-3.6c-0.2-0.1-0.5-0.2-0.8-0.3c-4.3-0.4-10.1,1-12.4,5
+				c-0.2,0.4,0.2,0.9,0.6,0.8c1.9-0.5,3.7-1.5,5.6-2c1.8-0.5,3.8-0.6,5.7-0.6c2.2,0.4,4.4,1.2,5.9,2.8
+				C107.6,76.8,109.6,74.7,108.4,73.2z" />
+      <path id="me-eyebrow-right" d="M79.8,74.2c-3-3.9-9.1-4.9-13.7-4.3c-0.3,0-0.6,0.2-0.8,0.3c-2.6,0.8-4.7,2.3-6.4,4.5
+				c-1,1.4,1.3,3.2,2.4,1.8c1.4-1.8,3.3-3,5.5-3.5c2.1-0.1,4.2-0.1,6.2,0.3c2.1,0.4,4.1,1.3,6.2,1.7C79.8,75.2,80.1,74.6,79.8,74.2z
+				" />
+    </g>
+    <path id="me-nose" d="M93.8,98.5c-0.7,0.1-1.4,0.2-2.1,0.3c1.7-7.7-0.2-18-2.1-25.3c-0.2-0.7-1.3-0.6-1.3,0.2
+			c0,4.3,0.7,8.6,1,13c0.3,4.1-0.2,8.5,0.4,12.5c-2.1,0.4-4.2,0.7-6.4,0.7c-2.9,0-5.6-0.8-8.4-1.2c-1.2-0.2-1.9,1.3-0.8,2
+			c5.2,3.4,15.4,2.9,20.4-0.6C95.2,99.4,94.7,98.3,93.8,98.5z" />
+  </g>
+</svg>
+    <script src="TweenMax.min.js" tppabs="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+
+        <script src="noavatar.js" tppabs="http://it-science.com.ua/js/noavatar.js"></script>
+
+
+									<p>damHuman | 2016-09-28 16:24:01</p>
+								</div>
+					
+							<div id="content"><style>
+ ul {
+   margin-left:10%;
+ }
+ 
+p{font-size:1.1em;}
+
+ #article a {
+    color: #4C75EB;
+ }
+
+.resourses{
+	font-size: 1.2em;
+	color: #000000;
+	
+}
+h2{
+margin-top:5%;
+}
+
+</style>
+
+<br /><br /><p>Чому прийшов час вболівати за програмістів? Чим відрізняється сопртивне програмування від футбольної першості? Як працюють чемпіони? І чи може переможець ACM ICPC зробити вам сайт?
+</p><br />
+<p>На ці та інші не менш цікаві питання відповіли Генадій Короткевич(tourist) - магістр ІТМО, переможець ACM ICPC, IOI та інших чемпіонатів з програмування, і Лідія Петровська - куратор академічних програм "Яндекс".
+</p><br />
+
+<div  align="center"><iframe width="560" height="315" src="0pbLFPY-w6c" tppabs="https://www.youtube.com/embed/0pbLFPY-w6c" frameborder="0" allowfullscreen></iframe><br /><br /></div>
+
+
+<div  align="left">
+<a class="resourses" href="javascript:if(confirm(%27http://codeforces.com/blog/entry/47377  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://codeforces.com/blog/entry/47377%27" tppabs="http://codeforces.com/blog/entry/47377"><i class="fa fa-reply-all">
+</i>Джерело</a><br />
+</div></div>
+							  
+							<div id="end"></div>
+						</div>
+						
+					        <div class="big"><div class="fb-like"   data-width="500" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></div>
+        <div class="small"><div class="fb-like"   data-width="250" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></div>
+          <div id="lastPosts">
+        <h1 class="afterArticle">Останні матеріали:</h1>
+  			<a href="article.php-id=10&table=dev.htm" tppabs="http://it-science.com.ua/article.php?id=10&table=dev">
+  			<div class="post">
+                <img src="dev_10.png" tppabs="http://it-science.com.ua/img/blocks/dev_10.png" alt="">
+                <div id="info">
+                    <p id="title">Чому прийшов час вболівати за програмістів</p>
+                    <p id="long_title">Чому прийшов час вболівати за програмістів</p>
+                </div>
+            </div>
+            </a>
+  			
+  			<a href="article.php-id=9&table=dev.htm" tppabs="http://it-science.com.ua/article.php?id=9&table=dev">
+  			<div class="post">
+                <img src="dev_9.png" tppabs="http://it-science.com.ua/img/blocks/dev_9.png" alt="">
+                <div id="info">
+                    <p id="title">Навчальні YouTube канали з програмування</p>
+                    <p id="long_title">Чим зайнятися після роботи: навчальні YouTube канали з програмування</p>
+                </div>
+            </div>
+            </a>
+  			
+  			<a href="article.php-id=8&table=dev.htm" tppabs="http://it-science.com.ua/article.php?id=8&table=dev">
+  			<div class="post">
+                <img src="dev_8.png" tppabs="http://it-science.com.ua/img/blocks/dev_8.png" alt="">
+                <div id="info">
+                    <p id="title">Разные языки программирования</p>
+                    <p id="long_title">Разные языки программирования и их области применения. Лекция в Яндексе</p>
+                </div>
+            </div>
+            </a>
+  			</div> 
+        <h1 class="afterArticle">Коментарі:</h1>
+        <div class="big"><div class="fb-comments" data-href="article.php-id=10&table=dev.htm" tppabs="http://it-science.com.ua/article.php?id=10&table=dev" data-width="600" data-numposts="5"></div></div>
+        <div class="small"><div id="small" class="fb-comments" data-href="article.php-id=10&table=dev.htm" tppabs="http://it-science.com.ua/article.php?id=10&table=dev" data-width="250" data-numposts="5"></div></div>
+    </div>  
+
+
+  <div id="rightCol">
+   
+	 <div class="block" id="navigation">
+            <h1><i class="fa fa-link"></i>&nbsp;Навiгація</h1>
+            <div id="navArt"><a href="article.php-id=9&table=dev.htm" tppabs="http://it-science.com.ua/article.php?id=9&table=dev"><i class="fa fa-chevron-left"></i></a><a href="javascript:if(confirm(%27http://it-science.com.ua/dev  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/dev%27" tppabs="http://it-science.com.ua/dev"><i class="fa fa-chevron-up"></i></a><a href="#">&nbsp;</a></div>
+            <p>&nbsp;</p><p>Попердня стаття</p><p>До категорії</p><p>Наступна стаття</p>
+	</div>
+
+    <div class="block" id="share">
+        <h1><i class="fa fa-share-alt"></i>&nbsp;Поділитися</h1>
+	        <script type="text/javascript">(function() {
+	        if (window.pluso)if (typeof window.pluso.start == "function") return;
+	        if (window.ifpluso==undefined) { window.ifpluso = 1;
+	        var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+	        s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+	        s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+	        var h=d[g]('body')[0];
+	        h.appendChild(s);
+	        }})();</script>
+        <div class="pluso" data-background="transparent" tppabs="http://it-science.com.ua/transparent" data-options="medium,square,line,horizontal,counter,theme=04" data-services="vkontakte,facebook,twitter,google,email"></div>        
+    </div>
+
+ 
+    <div class="block" id="search">
+     <h1><i class="fa fa-search" style="margin-bottom:2%;"></i>&nbsp;Пошук</h1>
+     <script>
+  (function() {
+    var cx = '010759461501894660166:rwvlkbzyzsa';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+  <div id="searchRC">
+<gcse:searchbox-only></gcse:searchbox-only>
+    </div>
+
+</div> 
+
+
+        <div class="block" id="adds">
+            <h1><i class="fa fa-adjust"></i>&nbsp;Реклама</h1>
+           <script async src="adsbygoogle.js" tppabs="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- main add block -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9571404577257395"
+         data-ad-slot="5707456069"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
+
+     
+    <div class="block" id="popular">
+      
+        <h1><i class="fa fa-files-o"></i>&nbsp;Популярні публікації</h1>
+        <ul><li><a href="article.php-id=0&table=dev.htm" tppabs="http://it-science.com.ua/article.php?id=0&table=dev"><i class="fa fa-chevron-right"></i>&nbsp;Яку мову програмування вивчити першою</a></li><li><a href="article.php-id=9&table=dev.htm" tppabs="http://it-science.com.ua/article.php?id=9&table=dev"><i class="fa fa-chevron-right"></i>&nbsp;Чим зайнятися після роботи: навчальні YouTube канали з програмування</a></li><li><a href="article.php-id=6&table=dev.htm" tppabs="http://it-science.com.ua/article.php?id=6&table=dev"><i class="fa fa-chevron-right"></i>&nbsp;Сайти з задачами з програмування</a></li><li><a href="article.php-id=2&table=dev.htm" tppabs="http://it-science.com.ua/article.php?id=2&table=dev"><i class="fa fa-chevron-right"></i>&nbsp;Найкраща добірка фільмів для айтішників</a></li><li><a href="article.php-id=8&table=dev.htm" tppabs="http://it-science.com.ua/article.php?id=8&table=dev"><i class="fa fa-chevron-right"></i>&nbsp;Разные языки программирования и их области применения. Лекция в Яндексе</a></li></ul>    </div>
+    </div>
+    <footer>
+		<div id="social">
+			
+		<h3>Всі права захищені &copy; 2018 <br /></h3>
+			<h4>При використанні матеріалів зворотнє посилання на сайт обов'язкове.</h4>
+		</div>	
+		<div id="content">
+			<a href="about.php.htm" tppabs="http://it-science.com.ua/about.php">Про нас</a> &nbsp;|&nbsp;
+			<a href="sorry.php.htm" tppabs="http://it-science.com.ua/sorry.php">Зворотній зв'язок</a>
+			<h4>Наша пошта: admin@it-science.com.ua</h4>
+		</div>
+		
+		<div id="rights">
+			<a href="javascript:if(confirm(%27http://vk.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://vk.com/%27" tppabs="http://vk.com/" target="_blank" title="Поділитися VK" target="_blank"><img src="soc_vk.jpg.png" tppabs="http://it-science.com.ua/img/social/soc_vk.jpg" alt="Поділитися ВК"></a>
+			<a href="javascript:if(confirm(%27https://www.facebook.com/sharer/sharer.php?u=http://it-science.com.ua/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://www.facebook.com/sharer/sharer.php?u=http://it-science.com.ua/%27" tppabs="https://www.facebook.com/sharer/sharer.php?u=http://it-science.com.ua/" target="_blank" title="Поділитися Facebook" target="_blank"><img src="soc-fb.jpg.png" tppabs="http://it-science.com.ua/img/social/soc-fb.jpg" alt="Поділитися Facebook"></a>
+			<a href="javascript:if(confirm(%27http://twitter.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://twitter.com/%27" tppabs="http://twitter.com/" title="Поділитися Twitter" target="_blank"><img src="soc-tw.jpg.png" tppabs="http://it-science.com.ua/img/social/soc-tw.jpg" alt="Поділитися Twitter"></a>
+			<br />
+			
+		</div>
+</footer>
+</body>
+</html>

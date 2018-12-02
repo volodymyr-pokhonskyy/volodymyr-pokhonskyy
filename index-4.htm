@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta property="fb:app_id"       content="887566987978996" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name='freelancehunt-verification' content='a7ddf20eb9e6cf3' />
+    <meta name='yandex-verification' content='4c5d65e11eafa45e' />
+    <meta name="keywords" content="блоги, соціальні мережі, інформаційні технології, програмування, программирование, информационная безопасность, стартапы, новости интернета, интернет маркетинг, ua, itua, in, internet, news, it, science, itscience, filonchuk, dasyuk, ,Україна, айті, ком'пютер, новини, у, сфері, комп'ютерних, технологій, сайт, інформатика, it-science.com.ua, інформаційні технології, шкільна інформатика, скретч, scratch, всеукраїнська олімпіада, word, excel, office, PowerPoint, access, бази даних, запити баз даних, останні, події, подія, урок, уроки, завдання, олімпіада, олімпіади, чернігів, київ, житомир, одеса, дніпропетровськ, європа, програмування, хакери, роботи, конспекти до уроку, презентації, таблиці, документи, завантажити, конкурс, міського, міський, Майкрософт, apple, Microsoft, htc, Samsung, Google, YouTube, всеукраїнська олімпіада з інформаційних технологій, kickstarter, нові, продукти, носії інформації, складові, складові комп'ютера, повідомлення, види, повідомлень, казка, графіка, мови, програмування" /> 
+    <meta property="og:site_name" content="It-Science/" />
+    <meta property="og:type" content="web-site" />
+    <meta property="og:url" content="http://it-science.com.ua/scratch/" /> 
+    <meta property="og:image" content="http://it-science.com.ua/img/main/share_small.png" />
+
+<title>Scratch</title>
+
+
+<script type="text/javascript" src="jquery.min.js" tppabs="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo.min.js" tppabs="http://it-science.com.ua/js/jquery.scrollTo.min.js"></script>
+<link href="css-family=Open+Sans.css" tppabs="https://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'>	
+<link rel="stylesheet" href="font-awesome.min.css" tppabs="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="favicon.png" tppabs="http://it-science.com.ua/favicon.png" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="style.css" tppabs="http://it-science.com.ua/css/style.css">
+ 
+
+</head>
+<body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+
+  ga('create', 'UA-68988527-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script type="text/javascript">
+$("#addition").hide();
+$("#minisearch").hide();
+   if($( window ).width() < 1000)
+        {
+          $("#more").hide();
+          $("#addition").hide();
+          $("#minisearch").show();
+        }
+   $(document).ready(function() {
+        $("#addition").hide();
+        $("#minisearch").hide();
+        var count = 0;
+       
+          $("#more").click(
+            function()
+            {
+                if (count % 2 == 0)
+                   $("#addition").show( "slow" );
+                else
+                   $("#addition").hide( "slow" );
+
+              count ++;
+
+            }
+          );
+       
+                
+    });
+   
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="ns.html-id=GTM-58KDL7" tppabs="http://www.googletagmanager.com/ns.html?id=GTM-58KDL7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm-5.js'/*tpa=http://it-science.com.ua/scratch/gtm.js*/});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58KDL7');</script>
+<!-- End Google Tag Manager -->
+
+<div id="header">
+	<div id="logo"><a href="index.htm" tppabs="http://it-science.com.ua/"><img id="logoi" src="sheep.png" tppabs="http://it-science.com.ua/img/main/sheep.png" alt=""></a></div> 
+	<div id="menuHead">
+    <div><a href="index-1.htm" tppabs="http://it-science.com.ua/dev/">Програмування</a></div>
+    <div><a href="index-2.htm" tppabs="http://it-science.com.ua/school/">Шкільна інформатика</a></div>
+    <div><a href="index-3.htm" tppabs="http://it-science.com.ua/it/">Інформаційні технології</a></div>
+    <div id="minisearch"><a href="search.php.htm" tppabs="http://it-science.com.ua/search.php">Пошук</a></div>
+    <div id="more"><a>Більше</a></div>
+    
+  </div>
+
+	<!--<div id="topSearchPanel">
+		<form class="form-wrapper cf">
+    	
+        <input type="text" placeholder="Шукати..." required>
+       <div id="searchbt">&nbsp;</div>
+		</form>	
+
+		
+	</div>-->
+	<div id="auth">
+		<a href="sorry.php.htm" tppabs="http://it-science.com.ua/sorry.php">Вхід</a>
+	</div>
+
+</div>
+  <div  id="addition">
+        <div><a href="index-4.htm" tppabs="http://it-science.com.ua/scratch/">Scratch</a></div>
+        <div><a href="index.htm#lastNewsTitle" tppabs="http://it-science.com.ua/#lastNewsTitle">Новини</a></div>
+        <div><a href="search.php.htm" tppabs="http://it-science.com.ua/search.php">Пошук</a></div>
+        <div><a href="about.php.htm" tppabs="http://it-science.com.ua/about.php">Про нас</a></div>
+        <div><a target="_blank" href="javascript:if(confirm(%27https://form.jotformeu.com/53463929716365  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://form.jotformeu.com/53463929716365%27" tppabs="https://form.jotformeu.com/53463929716365">Зворотній зв'язок</a></div> 
+
+  </div>
+   <script src="feedback2.js-3.3.REV.js" tppabs="https://form.jotformeu.com/static/feedback2.js?3.3.REV" type="text/javascript"> new JotformFeedback({ formId: "53463929716365", buttonText: "Зворотній зв'язок", base: "https://form.jotformeu.com/", background: "#0B1B6C", fontColor: "#FFFFFF", buttonSide: "right", buttonAlign: "center", type: false, width: 700, height: 500 }); </script>
+<div id="headerHow"></div>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '887566987978996',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "sdk.js"/*tpa=http://connect.facebook.net/uk_UA/sdk.js*/;
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+</script>
+    <div id="wrapper">
+        <div class="titels">Scratch</div>       
+           <div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=43&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=43&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=43&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_43.png" tppabs="http://it-science.com.ua/img/blocks/scratch_43.png"></div>
+							                    <div class="artname"><p>Фестиваль Scratch - проектів 2018</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>2658</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=43&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=42&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=42&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=42&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_42.png" tppabs="http://it-science.com.ua/img/blocks/scratch_42.png"></div>
+							                    <div class="artname"><p>Курс «Алгоритми і проекти Scratch» на платформі Prometheus</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>1561</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=43&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=41&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=41&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=41&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_41.png" tppabs="http://it-science.com.ua/img/blocks/scratch_41.png"></div>
+							                    <div class="artname"><p>Результати фестивалю Scrаtch-проектів.</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>929</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=43&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=40&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=40&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=40&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_40.png" tppabs="http://it-science.com.ua/img/blocks/scratch_40.png"></div>
+							                    <div class="artname"><p>«Пожежники-герої». Переможець фестивалю Scrаtch-проектів. Переможець у номінації «Гра-симулятор»</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>842</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=42&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=39&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=39&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=39&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_39.png" tppabs="http://it-science.com.ua/img/blocks/scratch_39.png"></div>
+							                    <div class="artname"><p>«Танчики». Переможець фестивалю Scrаtch-проектів. Переможець у номінації «Пригодницький бойовик»</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>473</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=42&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=38&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=38&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=38&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_38.png" tppabs="http://it-science.com.ua/img/blocks/scratch_38.png"></div>
+							                    <div class="artname"><p>«Борн». Переможець фестивалю Scrаtch-проектів. Переможець у номінації «Гонки, перегони»</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>376</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=42&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=37&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=37&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=37&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_37.png" tppabs="http://it-science.com.ua/img/blocks/scratch_37.png"></div>
+							                    <div class="artname"><p>«Тарас Шевченко». Переможець фестивалю Scrаtch-проектів. Переможець у номінації «Цифрова історія: історичні постаті»</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>316</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=41&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=36&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=36&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=36&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_36.png" tppabs="http://it-science.com.ua/img/blocks/scratch_36.png"></div>
+							                    <div class="artname"><p>“Фігурне водіння на велосипеді”, "Правила дорожнього руху", "Лабіринт". Переможець фестивалю Scrаtch-проектів. Номінація «Гра-симулятор»</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>275</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=41&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=35&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=35&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=35&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_35.png" tppabs="http://it-science.com.ua/img/blocks/scratch_35.png"></div>
+							                    <div class="artname"><p>"Їстівне і неїстівне". Переможець фестивалю Scrаtch-проектів. Номінація «Нове життя аркаїдним іграм»</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>353</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=41&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=34&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=34&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=34&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_34.png" tppabs="http://it-science.com.ua/img/blocks/scratch_34.png"></div>
+							                    <div class="artname"><p>"Пригоди Mr. Cat". Переможець фестивалю Scrаtch-проектів. Номінація «Навчальні програми»</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>457</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=40&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=33&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=33&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=33&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_33.png" tppabs="http://it-science.com.ua/img/blocks/scratch_33.png"></div>
+							                    <div class="artname"><p>Гра "Абатуар". Переможець фестивалю Scrаtch-проектів. Номінація «Нове життя аркаїдним іграм»</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>492</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=40&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=32&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=32&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=32&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_32.png" tppabs="http://it-science.com.ua/img/blocks/scratch_32.png"></div>
+							                    <div class="artname"><p>«Гра Чарівник». Переможець Фестивалю Scrаtch-проектів. Номінація «Гра з казковим сюжетом»
+</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>693</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=40&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=31&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=31&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=31&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_31.png" tppabs="http://it-science.com.ua/img/blocks/scratch_31.png"></div>
+							                    <div class="artname"><p>Фестиваль Scratch - проектів</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>1524</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=39&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=30&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=30&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=30&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_30.png" tppabs="http://it-science.com.ua/img/blocks/scratch_30.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Гра Новий рік"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>1906</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=39&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=29&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=29&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=29&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_29.png" tppabs="http://it-science.com.ua/img/blocks/scratch_29.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Гра Змійка"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>3046</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=39&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=28&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=28&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=28&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_28.png" tppabs="http://it-science.com.ua/img/blocks/scratch_28.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Past Continious"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>840</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=38&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=27&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=27&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=27&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_27.png" tppabs="http://it-science.com.ua/img/blocks/scratch_27.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Present Perfect"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>848</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=38&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=26&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=26&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=26&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_26.png" tppabs="http://it-science.com.ua/img/blocks/scratch_26.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Вітальна листівка до Дня закоханих"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>794</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=38&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=25&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=25&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=25&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_25.png" tppabs="http://it-science.com.ua/img/blocks/scratch_25.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Вітальна листівка до 8 Березня"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>855</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=37&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=24&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=24&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=24&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_24.png" tppabs="http://it-science.com.ua/img/blocks/scratch_24.png"></div>
+							                    <div class="artname"><p>Абетка Дорожнього руху. Проект у середовищі Scratch</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>1088</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=37&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=23&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=23&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=23&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_23.png" tppabs="http://it-science.com.ua/img/blocks/scratch_23.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Вітальна листівка до Дня закоханих"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>619</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=37&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=22&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=22&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=22&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_22.png" tppabs="http://it-science.com.ua/img/blocks/scratch_22.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "New Year Card"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>520</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=36&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=21&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=21&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=21&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_21.png" tppabs="http://it-science.com.ua/img/blocks/scratch_21.png"></div>
+							                    <div class="artname"><p>Домашнє завдання на канікули</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>633</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=36&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=20&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=20&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=20&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_20.png" tppabs="http://it-science.com.ua/img/blocks/scratch_20.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Вітальна листівка з новим роком"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>1142</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=36&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=19&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=19&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=19&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_19.png" tppabs="http://it-science.com.ua/img/blocks/scratch_19.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Happy New Year"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>613</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=35&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=18&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=18&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=18&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_18.png" tppabs="http://it-science.com.ua/img/blocks/scratch_18.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "З Новим роком"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>583</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=35&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=17&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=17&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=17&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_17.png.jpg" tppabs="http://it-science.com.ua/img/blocks/scratch_17.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Гра Лабіринт"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>1193</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=35&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=16&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=16&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=16&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_16.png" tppabs="http://it-science.com.ua/img/blocks/scratch_16.png"></div>
+							                    <div class="artname"><p>Завантаження та встановлення програми Скетч
+</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>2039</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=34&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=15&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=15&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=15&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_15.png" tppabs="http://it-science.com.ua/img/blocks/scratch_15.png"></div>
+							                    <div class="artname"><p>Scratch. 7 клас. Урок №12</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>2048</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=34&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=14&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=14&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=14&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_14.png" tppabs="http://it-science.com.ua/img/blocks/scratch_14.png"></div>
+							                    <div class="artname"><p>Scratch. 7 клас. Урок №11</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>4326</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=34&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=13&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=13&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=13&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_13.png" tppabs="http://it-science.com.ua/img/blocks/scratch_13.png"></div>
+							                    <div class="artname"><p>Scratch. 7 клас. Урок №10</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>666</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=33&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=12&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=12&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=12&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_12.png" tppabs="http://it-science.com.ua/img/blocks/scratch_12.png"></div>
+							                    <div class="artname"><p>Scratch. 7 клас. Урок №9</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>538</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=33&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=11&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=11&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=11&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_11.png" tppabs="http://it-science.com.ua/img/blocks/scratch_11.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Мультик Спортсмен"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>721</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=33&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=10&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=10&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=10&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_10.png" tppabs="http://it-science.com.ua/img/blocks/scratch_10.png"></div>
+							                    <div class="artname"><p>Проект у середовищі Scratch "Гра Снайпер"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>721</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=32&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=9&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=9&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=9&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_9.png" tppabs="http://it-science.com.ua/img/blocks/scratch_9.png"></div>
+							                    <div class="artname"><p>Відповіді до ребусів з теми "Scratch"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>762</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=32&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=8&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=8&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=8&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_8.png" tppabs="http://it-science.com.ua/img/blocks/scratch_8.png"></div>
+							                    <div class="artname"><p>Авторські ребуси з теми Scratch</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>672</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=32&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=7&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=7&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=7&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_7.png" tppabs="http://it-science.com.ua/img/blocks/scratch_7.png"></div>
+							                    <div class="artname"><p>Інтерактивна вправа. Базові алгоритмічні структури</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>553</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=31&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=6&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=6&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=6&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_6.png" tppabs="http://it-science.com.ua/img/blocks/scratch_6.png"></div>
+							                    <div class="artname"><p>Знайомство з вікном програми Scratch (ІВ)</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>593</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=31&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=5&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=5&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=5&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_5.png" tppabs="http://it-science.com.ua/img/blocks/scratch_5.png"></div>
+							                    <div class="artname"><p>Знайомство з кнопками вікна програми Scratch 
+(ІВ)</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>503</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=31&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=4&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=4&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=4&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_4.png" tppabs="http://it-science.com.ua/img/blocks/scratch_4.png"></div>
+							                    <div class="artname"><p>6 клас. Урок №7</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>803</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=30&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=3&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=3&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=3&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_3.png" tppabs="http://it-science.com.ua/img/blocks/scratch_3.png"></div>
+							                    <div class="artname"><p>6 клас. Урок №6</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>808</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=30&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=2&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=2&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=2&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_2.png" tppabs="http://it-science.com.ua/img/blocks/scratch_2.png"></div>
+							                    <div class="artname"><p>6 клас. Урок №5</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>1015</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=30&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	</div><div id="articleWrap">
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=1&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=1&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=1&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_1.png" tppabs="http://it-science.com.ua/img/blocks/scratch_1.png"></div>
+							                    <div class="artname"><p>2 клас. Казка "Про привида"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>1684</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=29&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	
+			                		<div class="artBox">
+									<div class="article">
+				                			<a href="javascript:if(confirm(%27http://it-science.com.ua/article.php?id=0&table=scratch  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://it-science.com.ua/article.php?id=0&table=scratch%27" tppabs="http://it-science.com.ua/article.php?id=0&table=scratch">
+				                				<div class="previewImg"><img  src="scratch_0.png" tppabs="http://it-science.com.ua/img/blocks/scratch_0.png"></div>
+							                    <div class="artname"><p>2 клас. Казка "Зла рибка"</p></div> 
+							                </a>
+							                <div class="socBut">
+							                    <div id="view"><p style="text-align: center;"><i class="fa fa-eye"></i>871</p></div>
+							                    <!--<div id="like"><p style="text-align: center;"><i class="fa fa-comment-o"></i><span class="fb-comments-count" data-href="http://it-science.com.ua/article.php?id=29&table=scratch">0</span></p></div>-->
+							                </div>
+						        	</div>
+						        	</div>
+						        	<div class="artBox"></div></div>        </div>        
+    </div>
+
+    <footer>
+		<div id="social">
+			
+		<h3>Всі права захищені &copy; 2018 <br /></h3>
+			<h4>При використанні матеріалів зворотнє посилання на сайт обов'язкове.</h4>
+		</div>	
+		<div id="content">
+			<a href="about.php.htm" tppabs="http://it-science.com.ua/about.php">Про нас</a> &nbsp;|&nbsp;
+			<a href="sorry.php.htm" tppabs="http://it-science.com.ua/sorry.php">Зворотній зв'язок</a>
+			<h4>Наша пошта: admin@it-science.com.ua</h4>
+		</div>
+		
+		<div id="rights">
+			<a href="javascript:if(confirm(%27http://vk.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://vk.com/%27" tppabs="http://vk.com/" target="_blank" title="Поділитися VK" target="_blank"><img src="soc_vk.jpg.png" tppabs="http://it-science.com.ua/img/social/soc_vk.jpg" alt="Поділитися ВК"></a>
+			<a href="javascript:if(confirm(%27https://www.facebook.com/sharer/sharer.php?u=http://it-science.com.ua/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://www.facebook.com/sharer/sharer.php?u=http://it-science.com.ua/%27" tppabs="https://www.facebook.com/sharer/sharer.php?u=http://it-science.com.ua/" target="_blank" title="Поділитися Facebook" target="_blank"><img src="soc-fb.jpg.png" tppabs="http://it-science.com.ua/img/social/soc-fb.jpg" alt="Поділитися Facebook"></a>
+			<a href="javascript:if(confirm(%27http://twitter.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://twitter.com/%27" tppabs="http://twitter.com/" title="Поділитися Twitter" target="_blank"><img src="soc-tw.jpg.png" tppabs="http://it-science.com.ua/img/social/soc-tw.jpg" alt="Поділитися Twitter"></a>
+			<br />
+			
+		</div>
+</footer>
+    
+</body>
+</html>
